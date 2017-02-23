@@ -63,6 +63,10 @@
       }
     }
 
+    const reset = function() {
+      document.getElementById("result").innerHTML = "";
+    }
+
     </script>
 
     <h1 style="text-align: center;">Fibonacci Sequence</h1>
@@ -81,8 +85,19 @@
       font-family: 'Shadows Into Light', cursive;
       font-size:20px;
       background-color: Transparent;
-      outline: none;" id="button" onclick="processFib()">
+      outline: none;" id="button"
+      onclick="processFib()">
         Calculate
+      </button>
+
+      <button
+      style="margin-top:10px;
+      font-family: 'Shadows Into Light', cursive;
+      font-size:20px;
+      background-color: Transparent;
+      outline: none;"
+      onclick="reset()">
+        Clear
       </button>
     </div>
 
